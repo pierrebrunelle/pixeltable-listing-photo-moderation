@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use or adapt this example app, please cite it using these metadata."
+type: software
+title: "Marketplace Listing Photo & Video Moderation media pipeline built with Pixeltable"
+abstract: "Trust-and-safety pipeline for marketplace listings: text moderation, a gpt-4o-mini vision verdict with boxes, box post-processing and mAP against human labels, per-frame video checks and voice-over transcripts scanned for off-platform contact."
+authors:
+  - given-names: "Pierre"
+    family-names: "Brunelle"
+repository-code: "https://github.com/pierrebrunelle/pixeltable-listing-photo-moderation"
+url: "https://pierrebrunelle.github.io/awesome-pixeltable-apps/"
+license: Apache-2.0
+version: "0.1.0"
+date-released: 2026-10-23
+keywords:
+  - "pixeltable"
+  - "pixeltable-example"
+  - "python"
+  - "computer-vision"
+  - "multimodal"
+  - "content-moderation"
+  - "trust-and-safety"
+  - "object-detection"
+  - "video-moderation"
+  - "llm"
