@@ -6,7 +6,7 @@
     python cli.py quality                     # mAP@0.5 of model boxes vs human ground truth
     python cli.py videos                      # worst frame verdict per listing video
     python cli.py spoken                      # voice-over chunks asking to move off-platform
-    MARKET_CATALOG=pxt://<org>:<db>/marketplace python cli.py queue
+    MARKET_CATALOG=pxt://<org>:<db> python cli.py queue
 """
 
 from __future__ import annotations

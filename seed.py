@@ -7,7 +7,7 @@ Cost: 9 moderation + 9 gpt-4o-mini vision calls for photos; per video ~6 frame c
 ~2 transcriptions and ~2 moderations.
 
     python seed.py            # local catalog 'marketplace'
-    python seed.py pxt://<your-org>:<your-db>/marketplace
+    python seed.py pxt://<your-org>:<your-db>
 """
 
 from __future__ import annotations

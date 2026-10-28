@@ -61,7 +61,7 @@ Local and on Pixeltable Cloud: 9 listings -> 3 allow, 4 review (person in photo,
 
 ## Pixeltable Cloud
 
-Add `system_dependencies = ['ffmpeg']` to the database entry in `pixeltable.toml` (audio extraction), set the key as a database secret (`pxt secret set pxt://<your-org>:<your-db> OPENAI_API_KEY=...`, then `pxt db restart`), run `pxt db update`, then `pxt schema update app.py pxt://<your-org>:<your-db>/marketplace` and `python seed.py pxt://<your-org>:<your-db>/marketplace`. The CLI takes `MARKET_CATALOG=pxt://<your-org>:<your-db>/marketplace`. If you edit `udfs.py` after `pxt db update`, run it again before `pxt schema update` (the diff says so).
+Add `system_dependencies = ['ffmpeg']` to the database entry in `pixeltable.toml` (audio extraction), set the key as a database secret (`pxt secret set pxt://<your-org>:<your-db> OPENAI_API_KEY=...`, then `pxt db restart`), run `pxt db update`, then `pxt schema update app.py pxt://<your-org>:<your-db>` and `python seed.py pxt://<your-org>:<your-db>`. The CLI takes `MARKET_CATALOG=pxt://<your-org>:<your-db>`. If you edit `udfs.py` after `pxt db update`, run it again before `pxt schema update` (the diff says so).
 
 ## Gotchas
 
@@ -155,7 +155,7 @@ The same `app.py` runs on [Pixeltable Cloud](https://pixeltable.com). Sign in (o
 pxt login                       # or: export PIXELTABLE_API_KEY=<your-api-key>
 # edit pixeltable.toml: name = 'pxt://<your-org>:<your-db>'
 pxt db update pxt://<your-org>:<your-db>                 # build the image and upload the project
-pxt schema update app.py pxt://<your-org>:<your-db>/marketplace   # create the tables in the hosted database
+pxt schema update app.py pxt://<your-org>:<your-db>       # create the tables at the database root (no per-app folder)
 ```
 
 Keep keys in environment variables or `pxt secret set`, never in code.
